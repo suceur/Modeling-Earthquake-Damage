@@ -20,8 +20,4 @@ if __name__ == "__main__":
                              index=submission_format.index)
     my_submission.head()   
     my_submission.to_csv('../data/submission/submission.csv')                      
-    '''
-    submission_df = pd.DataFrame({'building_id': submission_format.columns, 'damage_grade': predictions})
-    submission_df.to_csv('../data/submission/submission.csv', index=False)
-    submission_df.head()
-    '''
+   
