@@ -1,5 +1,10 @@
-# Richter's Prediction Notebook
-Workflow and Script Interaction
+# Earthquake Damage Predictions
+
+The competition is: [Richter's Predictor: Modeling Earthquake Damage](https://drivendata.co/blog/richters-predictor-benchmark/)
+
+submission score using XGBoost is 0.7311.
+
+## Workflow and Script Interaction
 
 data_preprocessing.py
 
@@ -21,3 +26,7 @@ predict_model.py
 Inputs: It loads the trained model from the file saved by train_model.py and the processed test data (which might also be preprocessed by data_preprocessing.py if it involves a separate test dataset).
 Purpose: The script uses the loaded model to make predictions on the test data.
 Outputs: The predictions are then formatted as required (e.g., for a competition submission or a report) and saved to a CSV file in the submission directory.
+
+Run the Scripts in the proper sequence:
+Navigate to the src directory  and run:
+**./run_pipeline.sh**
